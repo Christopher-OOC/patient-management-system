@@ -1,12 +1,13 @@
 spring:
   application:
     name: patient-service
-  h2:
-    console:
-      path: /h2-console
+#  h2:
+#    console:
+#      path: /h2-console
   datasource:
+    url: jdbc:postgresql://host.docker.internal:5432/patients_db
 #    url: jdbc:h2:mem:testdb
-    url: jdbc:postgresql://localhost:5432/patients_db
+#    url: jdbc:postgresql://localhost:5432/patients_db
 #    driver-class-name: org.h2.Driver
     username:  postgres
     password: chris
